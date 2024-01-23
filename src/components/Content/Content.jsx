@@ -27,7 +27,7 @@ const Content = () => {
               I am an undergraduate Information Systems student in Gunadarma
               university specializing in Front-End and Back-End development
             </p>
-            <div className="content-button flex mx-auto mt-10">
+            <div className="content-button mt-10">
               <Tooltip content="Download Resume" style="light">
                 <Button
                   className="text-center mx-auto"
@@ -37,6 +37,9 @@ const Content = () => {
                   Resume
                 </Button>
               </Tooltip>
+              <div className="block text-gray-400 md:hidden lg:hidden xl:hidden mt-10">
+                Last Updated 24 Januari 2024
+              </div>
             </div>
           </div>
           <div className="flex flex-col space-y-8 right-3.5 bottom-[50%] lg:right-3.5 absolute">
@@ -50,7 +53,7 @@ const Content = () => {
               <FaInstagram />
             </a>
           </div>
-          <div className="px-6 lg:px-4 lg:bottom-8 bottom-8 text-gray-400 absolute">
+          <div className="lg:px-4 lg:bottom-8 hiddenlg:text-gray-400 lg:absolute">
             Last Updated 24 Januari 2024
           </div>
           <div className="justify-center mx-auto mt-36 px-14">
