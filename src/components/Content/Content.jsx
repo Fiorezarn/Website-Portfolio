@@ -23,8 +23,9 @@ const Content = () => {
               speed={50}
               repeat={Infinity}
             />
-            <p className="text-white lg:w-4/5 lg:text-3xl text-xl text-justify mt-10">
-              i`m a full stack developer and i work remotely from south america
+            <p className="text-white lg:w-5/5 lg:text-3xl text-xl text-justify mt-10">
+              I am an undergraduate Information Systems student in Gunadarma
+              university specializing in Front-End and Back-End development
             </p>
             <div className="content-button flex mx-auto mt-10">
               <Tooltip content="Download Resume" style="light">

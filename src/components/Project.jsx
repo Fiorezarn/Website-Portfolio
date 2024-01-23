@@ -4,8 +4,13 @@ import Glide from "@glidejs/glide";
 import { Card } from "flowbite-react";
 import { FaEyeSlash } from "react-icons/fa";
 import MilenialStuff from "../assets/milenalstuff.jpg";
+import Moneta from "../assets/moneta.png";
+import Nextflix from "../assets/nextflix.png";
+import Batary from "../assets/Batary.png";
+import Incentive from "../assets/incentive.png";
 import { MdOutlineAirplay } from "react-icons/md";
 import { Icon } from "@iconify/react";
+import { FaEye } from "react-icons/fa";
 
 export default function CarouselIndicatorsOutside() {
   useEffect(() => {
@@ -13,8 +18,8 @@ export default function CarouselIndicatorsOutside() {
       type: "carousel",
       focusAt: "center",
       perView: 3,
-      autoplay: 3000,
-      animationDuration: 700,
+      // autoplay: 3000,
+      // animationDuration: 700,
       gap: 24,
       classNames: {
         nav: {
@@ -49,152 +54,174 @@ export default function CarouselIndicatorsOutside() {
                   imgAlt="Meaningful alt text for an image that is not purely decorative"
                   imgSrc={MilenialStuff}
                 >
-                  <div className="flex flex-cols gap-8">
+                  <div className="flex justify-between">
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                       Milenial Stuff Website
                     </h5>
-                    <Badge color="gray" icon={FaEyeSlash}>
+                    <Badge color="gray" icon={FaEye}>
+                      Public
+                    </Badge>
+                  </div>
+                  <p className="font-normal text-gray-700 dark:text-gray-400">
+                    Millennial Stuff is an online store that sells items This
+                    website was created using the Laravel framework version 8
+                  </p>
+                  <div className="btn-group flex gap-2">
+                    <a
+                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center"
+                      href="http://milenialstuff.my.id/"
+                    >
+                      <span>Demo</span>
+                      <MdOutlineAirplay />
+                    </a>
+                    <a
+                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center"
+                      href="https://github.com/Fiorezarn/MilenialStuff.id"
+                    >
+                      <span>Source Code</span>
+                      <Icon icon="ant-design:code-filled" />
+                    </a>
+                  </div>
+                </Card>
+              </li>
+              <li>
+                <Card
+                  className="max-w-sm"
+                  imgAlt="Meaningful alt text for an image that is not purely decorative"
+                  imgSrc={Moneta}
+                >
+                  <div className="flex justify-between">
+                    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      Moneta Website
+                    </h5>
+                    <Badge color="gray" icon={FaEye}>
+                      Public
+                    </Badge>
+                  </div>
+                  <p className="font-normal text-gray-700 dark:text-gray-400">
+                    Moneta website harmonizes financial records through ReactJS
+                    and Golang, ensuring a streamlined and responsive user
+                    interface.
+                  </p>
+                  <div className="btn-group flex gap-2">
+                    <a
+                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center"
+                      href="https://moneta.mikroskil.com/"
+                    >
+                      <span>Demo</span>
+                      <MdOutlineAirplay />
+                    </a>
+                    <a
+                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center"
+                      href="https://github.com/c23-m4001"
+                    >
+                      <span>Source Code</span>
+                      <Icon icon="ant-design:code-filled" />
+                    </a>
+                  </div>
+                </Card>
+              </li>
+              <li>
+                <Card
+                  className="max-w-sm"
+                  imgAlt="Meaningful alt text for an image that is not purely decorative"
+                  imgSrc={Nextflix}
+                >
+                  <div className="flex justify-between">
+                    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      Nextflix Website
+                    </h5>
+                    <Badge color="gray" icon={FaEye}>
+                      Public
+                    </Badge>
+                  </div>
+                  <p className="font-normal text-gray-700 dark:text-gray-400">
+                    Nextflix is a website that displays a list of movies taken
+                    from public api and created using webpack.
+                  </p>
+                  <div className="btn-group flex gap-2">
+                    <a
+                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center"
+                      href="https://nextflixweb.netlify.app/"
+                    >
+                      <span>Demo</span>
+                      <MdOutlineAirplay />
+                    </a>
+                    <a
+                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center"
+                      href="https://github.com/Fiorezarn/Nextflix-webpack"
+                    >
+                      <span>Source Code</span>
+                      <Icon icon="ant-design:code-filled" />
+                    </a>
+                  </div>
+                </Card>
+              </li>
+              <li>
+                <Card
+                  className="max-w-sm"
+                  imgAlt="Meaningful alt text for an image that is not purely decorative"
+                  imgSrc={Batary}
+                >
+                  <div className="flex justify-between">
+                    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      Batary Apps
+                    </h5>
+                    <Badge color="gray" icon={FaEye}>
+                      Public
+                    </Badge>
+                  </div>
+                  <p className="font-normal text-gray-700 dark:text-gray-400">
+                    Batary Apps is a website that displays a list of Restaurant
+                    taken from public api and created using webpack.
+                  </p>
+                  <div className="btn-group flex gap-2">
+                    <a
+                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center"
+                      href="https://bataryapps.netlify.app/"
+                    >
+                      <span>Demo</span>
+                      <MdOutlineAirplay />
+                    </a>
+                    <a
+                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center"
+                      href="https://github.com/Fiorezarn/Batary-Apps"
+                    >
+                      <span>Source Code</span>
+                      <Icon icon="ant-design:code-filled" />
+                    </a>
+                  </div>
+                </Card>
+              </li>
+              <li>
+                <Card
+                  className="max-w-sm"
+                  imgAlt="Meaningful alt text for an image that is not purely decorative"
+                  imgSrc={Incentive}
+                >
+                  <div className="flex justify-between">
+                    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      Incentive Website
+                    </h5>
+                    <Badge className="text-end justify-end" color="gray" icon={FaEye}>
                       Private
                     </Badge>
                   </div>
                   <p className="font-normal text-gray-700 dark:text-gray-400">
-                    Here are the biggest enterprise technology acquisitions of
-                    2021 so far, in reverse chronological order.
+                    Incentive website is here to provide support in managing and
+                    calculating employee incentives this website was created
+                    using Laravel
                   </p>
                   <div className="btn-group flex gap-2">
                     <a
-                      className="bg-black rounded-lg flex gap-2 px-6 py-2 text-white items-center"
+                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center pointer-events-none"
                       href=""
                     >
                       <span>Demo</span>
                       <MdOutlineAirplay />
                     </a>
                     <a
-                      className="bg-black rounded-lg flex gap-2 px-6 py-2 text-white items-center"
-                      href=""
-                    >
-                      <span>Source Code</span>
-                      <Icon icon="ant-design:code-filled" />
-                    </a>
-                  </div>
-                </Card>
-              </li>
-              <li>
-                <Card
-                  className="max-w-sm"
-                  imgAlt="Meaningful alt text for an image that is not purely decorative"
-                  imgSrc={MilenialStuff}
-                >
-                  <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    Milenial Stuff Website
-                  </h5>
-                  <p className="font-normal text-gray-700 dark:text-gray-400">
-                    Here are the biggest enterprise technology acquisitions of
-                    2021 so far, in reverse chronological order.
-                  </p>
-                  <div className="btn-group flex gap-2">
-                    <a
-                      className="bg-black rounded-lg flex gap-2 px-6 py-2 text-white items-center"
-                      href=""
-                    >
-                      <span>Demo</span>
-                      <MdOutlineAirplay />
-                    </a>
-                    <a
-                      className="bg-black rounded-lg flex gap-2 px-6 py-2 text-white items-center"
-                      href=""
-                    >
-                      <span>Source Code</span>
-                      <Icon icon="ant-design:code-filled" />
-                    </a>
-                  </div>
-                </Card>
-              </li>
-              <li>
-                <Card
-                  className="max-w-sm"
-                  imgAlt="Meaningful alt text for an image that is not purely decorative"
-                  imgSrc={MilenialStuff}
-                >
-                  <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    Milenial Stuff Website
-                  </h5>
-                  <p className="font-normal text-gray-700 dark:text-gray-400">
-                    Here are the biggest enterprise technology acquisitions of
-                    2021 so far, in reverse chronological order.
-                  </p>
-                  <div className="btn-group flex gap-2">
-                    <a
-                      className="bg-black rounded-lg flex gap-2 px-6 py-2 text-white items-center"
-                      href=""
-                    >
-                      <span>Demo</span>
-                      <MdOutlineAirplay />
-                    </a>
-                    <a
-                      className="bg-black rounded-lg flex gap-2 px-6 py-2 text-white items-center"
-                      href=""
-                    >
-                      <span>Source Code</span>
-                      <Icon icon="ant-design:code-filled" />
-                    </a>
-                  </div>
-                </Card>
-              </li>
-              <li>
-                <Card
-                  className="max-w-sm"
-                  imgAlt="Meaningful alt text for an image that is not purely decorative"
-                  imgSrc={MilenialStuff}
-                >
-                  <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    Milenial Stuff Website
-                  </h5>
-                  <p className="font-normal text-gray-700 dark:text-gray-400">
-                    Here are the biggest enterprise technology acquisitions of
-                    2021 so far, in reverse chronological order.
-                  </p>
-                  <div className="btn-group flex gap-2">
-                    <a
-                      className="bg-black rounded-lg flex gap-2 px-6 py-2 text-white items-center"
-                      href=""
-                    >
-                      <span>Demo</span>
-                      <MdOutlineAirplay />
-                    </a>
-                    <a
-                      className="bg-black rounded-lg flex gap-2 px-6 py-2 text-white items-center"
-                      href=""
-                    >
-                      <span>Source Code</span>
-                      <Icon icon="ant-design:code-filled" />
-                    </a>
-                  </div>
-                </Card>
-              </li>
-              <li>
-                <Card
-                  className="max-w-sm"
-                  imgAlt="Meaningful alt text for an image that is not purely decorative"
-                  imgSrc={MilenialStuff}
-                >
-                  <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    Milenial Stuff Website
-                  </h5>
-                  <p className="font-normal text-gray-700 dark:text-gray-400">
-                    Here are the biggest enterprise technology acquisitions of
-                    2021 so far, in reverse chronological order.
-                  </p>
-                  <div className="btn-group flex gap-2">
-                    <a
-                      className="bg-black rounded-lg flex gap-2 px-6 py-2 text-white items-center"
-                      href=""
-                    >
-                      <span>Demo</span>
-                      <MdOutlineAirplay />
-                    </a>
-                    <a
-                      className="bg-black rounded-lg flex gap-2 px-6 py-2 text-white items-center"
+                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center pointer-events-none"
                       href=""
                     >
                       <span>Source Code</span>

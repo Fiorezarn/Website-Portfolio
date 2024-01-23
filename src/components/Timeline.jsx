@@ -1,5 +1,5 @@
-import { Button, Timeline } from "flowbite-react";
-import { HiArrowNarrowRight, HiCalendar } from "react-icons/hi";
+import { Timeline } from "flowbite-react";
+import { HiCalendar } from "react-icons/hi";
 
 const TimelineComponent = () => {
   return (
