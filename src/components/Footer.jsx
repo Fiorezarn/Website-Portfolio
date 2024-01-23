@@ -2,26 +2,21 @@ import { Footer } from "flowbite-react";
 
 const FooterComponent = () => {
   return (
-    <Footer container className="bg-transparent">
-      <div className="w-full text-center">
-        <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
-          <Footer.Brand
-            href="https://flowbite.com"
-            src="https://flowbite.com/docs/images/logo.svg"
-            alt="Flowbite Logo"
-            name="FRN."
-          />
-          <Footer.LinkGroup>
-            <Footer.Link href="#">About</Footer.Link>
-            <Footer.Link href="#">Privacy Policy</Footer.Link>
-            <Footer.Link href="#">Licensing</Footer.Link>
-            <Footer.Link href="#">Contact</Footer.Link>
-          </Footer.LinkGroup>
+    <div className="w-full lg:text-center text-white px-10">
+      <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
+        <div className="logo">
+          <h1 className="text-purple-400 text-3xl font-bold mb-8">FRN.</h1>
         </div>
-        <Footer.Divider />
-        <Footer.Copyright href="#" by="Flowbite™" year={2022} />
+        <div className="flex gap-10 text-black text-end justify-end">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Skill</a>
+          <a href="">Project</a>
+        </div>
       </div>
-    </Footer>
+      <Footer.Divider />
+      <p>©2024 Fiorezarn™</p>
+    </div>
   );
 };
 
