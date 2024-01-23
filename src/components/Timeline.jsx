@@ -8,50 +8,58 @@ const TimelineComponent = () => {
         <Timeline.Item>
           <Timeline.Point icon={HiCalendar} />
           <Timeline.Content>
-            <Timeline.Time>February 2022</Timeline.Time>
-            <Timeline.Title>Application UI code in Tailwind CSS</Timeline.Title>
+            <Timeline.Time>Aug 2023 - Dec 2023 · 5 mos</Timeline.Time>
+            <Timeline.Title className="text-white">
+              PT Trans Retail Indonesia
+            </Timeline.Title>
+            <p className="text-gray-300 text-2sm font-semibold">
+              Sofware Developer Intern
+            </p>
             <Timeline.Body>
-              Get access to over 20+ pages including a dashboard layout, charts,
-              kanban board, calendar, and pre-order E-commerce & Marketing
-              pages.
-            </Timeline.Body>
-            <Button color="gray">
-              Learn More
-              <HiArrowNarrowRight className="ml-2 h-3 w-3" />
-            </Button>
-          </Timeline.Content>
-        </Timeline.Item>
-        <Timeline.Item>
-          <Timeline.Point icon={HiCalendar} />
-          <Timeline.Content>
-            <Timeline.Time>March 2022</Timeline.Time>
-            <Timeline.Title>Marketing UI design in Figma</Timeline.Title>
-            <Timeline.Body>
-              All of the pages and components are first designed in Figma and we
-              keep a parity between the two versions even as we update the
-              project.
+              I have successfully created a customer data website to record
+              customers, an incentive website for employees, stores, and brands,
+              and a cycle count website to count stock in stores. all developed
+              using the Laravel framework.
             </Timeline.Body>
           </Timeline.Content>
         </Timeline.Item>
         <Timeline.Item>
           <Timeline.Point icon={HiCalendar} />
           <Timeline.Content>
-            <Timeline.Time>April 2022</Timeline.Time>
-            <Timeline.Title>E-Commerce UI code in Tailwind CSS</Timeline.Title>
+            <Timeline.Time>Feb 2023 - Jul 2023 · 6 mos</Timeline.Time>
+            <Timeline.Title className="text-white">
+              PT Presentologics (Dicoding Indonesia)
+            </Timeline.Title>
+            <p className="text-gray-300 text-2sm font-semibold">
+              Study Independent - Front End and Back End Developer
+            </p>
             <Timeline.Body>
-              Get started with dozens of web components and interactive elements
-              built on top of Tailwind CSS.
+              I have created a responsive and attractive interface using
+              React.js and Tailwind CSS. In addition, I also integrated PWA
+              technology and public APIs into the restaurant information
+              website. I also created a RESTful API for the bookshelf
+              application. In addition, I have achieved the status as the best
+              student in Dicoding Indonesia.
             </Timeline.Body>
           </Timeline.Content>
         </Timeline.Item>
         <Timeline.Item>
           <Timeline.Point icon={HiCalendar} />
           <Timeline.Content>
-            <Timeline.Time>April 2022</Timeline.Time>
-            <Timeline.Title>E-Commerce UI code in Tailwind CSS</Timeline.Title>
+            <Timeline.Time>Feb 2022 - Present · 2 yrs</Timeline.Time>
+            <Timeline.Title className="text-white">
+              University of Gunadarma
+            </Timeline.Title>
+            <p className="text-gray-300 text-2sm font-semibold">
+              Laboratory Assistant at Integrated Laboratory (iLab)
+            </p>
             <Timeline.Body>
-              Get started with dozens of web components and interactive elements
-              built on top of Tailwind CSS.
+              I produced instructional videos, modules, and course questions for
+              online learning, contributing to a comprehensive educational
+              experience. Simultaneously, I developed a program module using
+              COBOL and BASIC languages, demonstrating proficiency in diverse
+              programming skills. Additionally, I monitored and addressed
+              practicum-related queries
             </Timeline.Body>
           </Timeline.Content>
         </Timeline.Item>
