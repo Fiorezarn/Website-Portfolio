@@ -37,7 +37,7 @@ const Content = () => {
                   Resume
                 </Button>
               </Tooltip>
-              <div className="block text-gray-400 md:hidden lg:hidden xl:hidden my-11">
+              <div className="block text-gray-400 md:hidden lg:hidden xl:hidden my-10">
                 Last Updated 24 Januari 2024
               </div>
             </div>
