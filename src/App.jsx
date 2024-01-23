@@ -6,6 +6,7 @@ import Project from "./components/Project";
 import ParticleBg from "./components/Particle";
 import Footer from "./components/Footer";
 import Skill from "./components/Skill";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About />
       <Skill />
       <Project />
+      <Contact />
       <Footer />
     </>
   );

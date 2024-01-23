@@ -5,6 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { Tooltip } from "flowbite-react";
 import { Button } from "flowbite-react";
+import Resume from "../../../public/Fioreza Radhin Naufal-resume.pdf";
 import "./Content.scss";
 
 const Content = () => {
@@ -34,28 +35,43 @@ const Content = () => {
                   outline
                   gradientDuoTone="purpleToPink"
                 >
-                  Resume
+                  <a
+                    className="text-black hover:text-white"
+                    href={Resume}
+                    download="Fioreza-Resume"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Resume
+                  </a>
                 </Button>
               </Tooltip>
-              <div className="block text-gray-400 md:hidden lg:hidden xl:hidden my-10">
+              <div className="block text-gray-400 text-sm font-normal mt-16">
                 Last Updated 24 Januari 2024
               </div>
             </div>
           </div>
           <div className="flex flex-col space-y-8 right-3.5 bottom-[50%] lg:right-3.5 absolute">
-            <a className="text-white hover:text-purple-400 text-3xl" href="">
+            <a
+              className="text-white hover:text-purple-400 text-3xl"
+              href="https://github.com/fiorezarn"
+            >
               <FaGithub />
             </a>
-            <a className="text-white hover:text-purple-400 text-3xl" href="">
+            <a
+              className="text-white hover:text-purple-400 text-3xl"
+              href="https://www.linkedin.com/in/fiorezarn"
+            >
               <FaLinkedin />
             </a>
-            <a className="text-white hover:text-purple-400 text-3xl" href="">
+            <a
+              className="text-white hover:text-purple-400 text-3xl"
+              href="https://www.instagram.com/fiorezaa/"
+            >
               <FaInstagram />
             </a>
           </div>
-          <div className="lg:px-4 lg:bottom-8 hiddenlg:text-gray-400 lg:absolute">
-            Last Updated 24 Januari 2024
-          </div>
+
           <div className="justify-center mx-auto mt-36 px-14">
             <div className="wrap flex items-center justify-center">
               <div className="circle h-30 lg:w-96 lg:h-96">

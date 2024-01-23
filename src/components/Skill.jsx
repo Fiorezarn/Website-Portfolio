@@ -10,7 +10,7 @@ const Skill = () => {
     <div className="w-full pt-20 px-6 lg:px-28">
       <h1 className="font-bold text-4xl text-center">Skill</h1>
       <div className="flex flex-col gap-10 lg:gap-0 lg:grid lg:grid-cols-3 mt-10">
-        <Card href="#" className="max-w-sm">
+        <Card className="max-w-sm">
           <div className="text-center mx-auto text-6xl text-purple-800">
             <FaLaptopCode />
           </div>
@@ -34,7 +34,7 @@ const Skill = () => {
             <Icon icon="vscode-icons:file-type-tailwind" />
           </div>
         </Card>
-        <Card href="#" className="max-w-sm">
+        <Card className="max-w-sm">
           <div className="text-center mx-auto text-6xl text-purple-800">
             <TbWorldCode />
           </div>
@@ -52,9 +52,12 @@ const Skill = () => {
             <Icon icon="devicon:laravel-wordmark" />
             <Icon icon="logos:nodejs" />
             <Icon icon="devicon:php" />
+            <Icon icon="logos:mysql" />
+            <Icon icon="devicon:oracle" />
+            <Icon icon="devicon:postgresql-wordmark" />
           </div>
         </Card>
-        <Card href="#" className="max-w-sm">
+        <Card className="max-w-sm">
           <div className="text-center mx-auto text-6xl text-purple-800">
             <GiSkills />
           </div>
@@ -69,9 +72,10 @@ const Skill = () => {
             Techstack:
           </h1>
           <div className="icon text-4xl flex gap-2 mx-auto">
-          <Icon icon="akar-icons:github-fill" />
-          <Icon icon="devicon:figma" />
-          <Icon icon="devicon:jira-wordmark" />
+            <Icon icon="akar-icons:github-fill" />
+            <Icon icon="devicon:figma" />
+            <Icon icon="devicon:dbeaver" />
+            <Icon icon="devicon:jira-wordmark" />
           </div>
         </Card>
       </div>

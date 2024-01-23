@@ -9,18 +9,24 @@ const About = () => {
           <div>
             <h1 className="text-center font-bold text-4xl mt-8">About Me</h1>
             <p className="text-xl text-justify py-16">
-              My Name is <span className="text-purple-500">Fioreza Radhin Naufal</span>, I am an Information Systems
-              student specializing in Front-End and Back-End development. I have
-              skills in multiple programming languages and frameworks.
-              Additionally, I possess strong abilities in problem-solving,
-              critical thinking, and time management
+              My Name is{" "}
+              <span className="text-purple-500">Fioreza Radhin Naufal</span>, I
+              am an Information Systems student specializing in Front-End and
+              Back-End development. I have skills in multiple programming
+              languages and frameworks. Additionally, I possess strong abilities
+              in problem-solving, critical thinking, and time management
             </p>
             <Button
               className="text-center mx-auto"
               outline
               gradientDuoTone="purpleToPink"
             >
-              Contact Me!
+              <a
+                className="text-black hover:text-white"
+                href="https://wa.me/085282810336"
+              >
+                Contact Me!
+              </a>
             </Button>
           </div>
           <div className="mt-16">
