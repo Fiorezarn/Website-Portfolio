@@ -1,23 +1,67 @@
-.circle {
-  background: plum;
-  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+.image-container--circle {
+  background: url("../../assets/Reza.png") no-repeat center center;
+  background-size: cover;
+  border-radius: 50%;
   overflow: hidden;
-  animation: morph 3s linear infinite;
+  transition: border 0.2s ease-out;
+  border-width: 4px;
+  border-color: rgba(179, 0, 213, 0.89);
+  box-shadow: -1px 1px 100px 0px rgba(179, 0, 213, 0.89);
+  -webkit-box-shadow: -1px 1px 100px 0px rgba(179, 0, 213, 0.89);
+  -moz-box-shadow: -1px 1px 100px 0px rgba(179, 0, 213, 0.89);
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  font-family: "Karla", sans-serif;
+
+  .content {
+    position: absolute;
+    background: rgba(44, 52, 69, 0.8);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform: scale(0);
+  }
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px rgba(44, 52, 69, 0.1),
+      0 1px 2px rgba(44, 52, 69, 0.1);
+
+    box-shadow: -1px 1px 100px 0px rgba(179, 0, 213, 0.89);
+    -webkit-box-shadow: -1px 1px 100px 0px rgba(179, 0, 213, 0.89);
+    -moz-box-shadow: -1px 1px 100px 0px rgba(179, 0, 213, 0.89);
+    .content {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }
 
-.circle img {
-  width: 100%;
-}
-
-@keyframes morph {
-  0%,
-  100% {
-    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
-  }
-  34% {
-    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
-  }
-  67% {
-    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+@media screen and (max-width: 940px) {
+  .image-container--circle {
+    background: url("../../assets/Reza.png") no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: border 0.2s ease-out;
+    border-width: 4px;
+    border-color: rgba(179, 0, 213, 0.89);
+    box-shadow: -1px 1px 40px 0px rgba(179, 0, 213, 0.89);
+    -webkit-box-shadow: -1px 1px 40px 0px rgba(179, 0, 213, 0.89);
+    -moz-box-shadow: -1px 1px 40px 0px rgba(179, 0, 213, 0.89);
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    font-family: "Karla", sans-serif;
   }
 }

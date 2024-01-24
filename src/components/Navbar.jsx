@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-screen bg-black z-20 flex justify-between items-center h-24 mx-auto px-12 text-white">
       {/* Logo */}
-      <h1 className="w-full text-3xl font-bold text-purple-400">FRN.</h1>
+      <h1 className="w-full text-3xl font-bold text-purple-400">Fioreza Radhin Naufal</h1>
 
       {/* Desktop Navigation */}
       <ul className="hidden md:flex">
@@ -57,7 +57,9 @@ const Navbar = () => {
             key={item.id}
             className="p-4 border-b rounded-xl hover:bg-purple-400 duration-300 hover:text-black cursor-pointer border-gray-600"
           >
-            {item.text}
+            <a className="text-white hover:text-black" href={`#${item.text}`}>
+              {item.text}
+            </a>
           </li>
         ))}
       </ul>

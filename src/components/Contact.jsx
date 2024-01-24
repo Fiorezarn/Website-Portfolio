@@ -77,18 +77,20 @@ const Contact = () => {
       />
       <ToastContainer />
       <div
-        className="lg:h-screen w-full pt-20 px-6 lg:px-28 mb-10 lg:mb-0"
+        className="lg:h-screen w-full pt-20 px-6 lg:px-28 mb-10 xl:mb-0 xl:pt-0 lg:mb-0"
         id="Contact"
       >
         <div className="lg:grid lg:grid-cols-2 lg:gap-10">
           <div>
-            <h1 className="font-bold">
+            <h1 className="font-bold md:text-center">
               <span className="text-purple-400">Let`s chat</span>
               <br />
               Tell me about your <br /> project.
             </h1>
-            <p className="mt-6">Let`s create something together✨</p>
-            <div className="mt-10 mb-10 px-4 w-64 py-1 backdrop-blur-sm bg-white/30 rounded-xl flex gap-4">
+            <p className="mt-6 md:text-center">
+              Let`s create something together✨
+            </p>
+            <div className="mt-10 mb-10 px-4 w-64 py-1 backdrop-blur-sm bg-white/30 rounded-xl flex gap-4 mx-auto">
               <Icon className="text-3xl mt-3" icon="skill-icons:gmail-light" />
               <div className="my-1">
                 <p className="text-gray-100">Mail me at:</p>

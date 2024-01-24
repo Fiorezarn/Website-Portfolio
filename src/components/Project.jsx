@@ -43,7 +43,7 @@ export default function CarouselIndicatorsOutside() {
 
   return (
     <>
-      <div className="lg:h-screen pt-20 lg:px-28" id="Project">
+      <div className="lg:h-screen pt-20 lg:px-28 xl:px-72" id="Project">
         <h1 className="font-bold text-4xl text-center">Project</h1>
         <div className="glide-05 relative py-10">
           <div className="overflow-hidden" data-glide-el="track">

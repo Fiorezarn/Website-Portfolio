@@ -51,7 +51,7 @@ const Content = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col space-y-8 right-3.5 bottom-[50%] lg:right-3.5 absolute">
+          <div className="flex flex-col space-y-8 right-3.5 bottom-[50%] lg:right-3.5 md:top-32 absolute">
             <a
               className="text-white hover:text-purple-400 text-3xl"
               href="https://github.com/fiorezarn"
@@ -72,10 +72,13 @@ const Content = () => {
             </a>
           </div>
 
-          <div className="justify-center mx-auto mt-36 px-14">
-            <div className="wrap flex items-center justify-center">
-              <div className="circle h-30 lg:w-96 lg:h-96">
-                <img src={Reza} alt="" />
+          <div className="justify-center mx-auto mt-44 lg:mt-20 px-14">
+            <div className="image-container--circle w-72 h-72 lg:h-96 lg:w-96 ">
+              <div className="content ">
+                <div className="text">
+                  <h3>Fioreza R N</h3>
+                  <p>Fullstack Developer</p>
+                </div>
               </div>
             </div>
           </div>
