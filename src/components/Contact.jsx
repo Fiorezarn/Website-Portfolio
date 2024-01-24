@@ -82,15 +82,15 @@ const Contact = () => {
       >
         <div className="lg:grid lg:grid-cols-2 lg:gap-10">
           <div>
-            <h1 className="font-bold md:text-center">
+            <h1 className="font-bold md:text-center text-center lg:text-left">
               <span className="text-purple-400">Let`s chat</span>
               <br />
               Tell me about your <br /> project.
             </h1>
-            <p className="mt-6 md:text-center">
+            <p className="mt-6 text-center lg:text-left md:text-center">
               Let`s create something together✨
             </p>
-            <div className="mt-10 mb-10 px-4 w-64 py-1 backdrop-blur-sm bg-white/30 rounded-xl flex gap-4 mx-auto">
+            <div className="mt-10 mb-10 px-4 w-64 py-1 backdrop-blur-sm bg-white/30 rounded-xl flex gap-4 mx-auto lg:mx-0">
               <Icon className="text-3xl mt-3" icon="skill-icons:gmail-light" />
               <div className="my-1">
                 <p className="text-gray-100">Mail me at:</p>
