@@ -10,8 +10,13 @@ import { HiMail } from "react-icons/hi";
 import { MdSubject } from "react-icons/md";
 import { Icon } from "@iconify/react";
 import emailjs from "@emailjs/browser";
+import { injectStyle } from "react-toastify/dist/inject-style";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
+if (typeof window !== "undefined") {
+  injectStyle();
+}
 
 const Contact = () => {
   const form = useRef();
@@ -54,6 +59,7 @@ const Contact = () => {
         }
       );
   };
+
   return (
     <>
       <ToastContainer
@@ -70,7 +76,10 @@ const Contact = () => {
         transition:Bounce
       />
       <ToastContainer />
-      <div className="lg:h-screen w-full pt-20 px-6 lg:px-28 mb-72 lg:mb-0">
+      <div
+        className="lg:h-screen w-full pt-20 px-6 lg:px-28 mb-10 lg:mb-0"
+        id="Contact"
+      >
         <div className="lg:grid lg:grid-cols-2 lg:gap-10">
           <div>
             <h1 className="font-bold">

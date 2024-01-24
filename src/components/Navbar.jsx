@@ -13,6 +13,7 @@ const Navbar = () => {
     { id: 2, text: "About" },
     { id: 3, text: "Skill" },
     { id: 4, text: "Project" },
+    { id: 4, text: "Contact" },
   ];
 
   return (
@@ -27,7 +28,7 @@ const Navbar = () => {
             key={item.id}
             className="p-4 hover:bg-purple-400 rounded-xl m-2 cursor-pointer duration-300 hover:text-black"
           >
-            {item.text}
+            <a href={`#${item.text}`}>{item.text}</a>
           </li>
         ))}
       </ul>

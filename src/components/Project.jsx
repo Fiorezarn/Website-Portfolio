@@ -18,8 +18,8 @@ export default function CarouselIndicatorsOutside() {
       type: "carousel",
       focusAt: "center",
       perView: 3,
-      // autoplay: 3000,
-      // animationDuration: 700,
+      autoplay: 3000,
+      animationDuration: 700,
       gap: 24,
       classNames: {
         nav: {
@@ -43,7 +43,7 @@ export default function CarouselIndicatorsOutside() {
 
   return (
     <>
-      <div className="lg:h-screen pt-20 lg:px-28 ">
+      <div className="lg:h-screen pt-20 lg:px-28" id="Project">
         <h1 className="font-bold text-4xl text-center">Project</h1>
         <div className="glide-05 relative py-10">
           <div className="overflow-hidden" data-glide-el="track">

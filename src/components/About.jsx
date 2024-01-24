@@ -4,7 +4,7 @@ import { Button } from "flowbite-react";
 const About = () => {
   return (
     <>
-      <div className="lg:h-screen w-full pt-20 px-6 lg:px-28">
+      <div className="lg:h-screen w-full pt-20 px-6 lg:px-28" id="About">
         <div className="lg:grid lg:grid-cols-2 lg:gap-10">
           <div>
             <h1 className="text-center font-bold text-4xl mt-8">About Me</h1>
@@ -23,7 +23,7 @@ const About = () => {
             >
               <a
                 className="text-black hover:text-white"
-                href="https://wa.me/085282810336"
+                href="https://wa.me/6285282810339"
               >
                 Contact Me!
               </a>

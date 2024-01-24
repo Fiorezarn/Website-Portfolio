@@ -7,7 +7,7 @@ import { GiSkills } from "react-icons/gi";
 
 const Skill = () => {
   return (
-    <div className="w-full pt-20 px-6 lg:px-28">
+    <div className="w-full pt-20 px-6 lg:px-28" id="Skill">
       <h1 className="font-bold text-4xl text-center">Skill</h1>
       <div className="flex flex-col gap-10 lg:gap-0 lg:grid lg:grid-cols-3 mt-10">
         <Card className="max-w-sm">
