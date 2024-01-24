@@ -203,7 +203,11 @@ export default function CarouselIndicatorsOutside() {
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                       Incentive Website
                     </h5>
-                    <Badge className="text-end justify-end" color="gray" icon={FaEye}>
+                    <Badge
+                      className="text-end justify-end"
+                      color="gray"
+                      icon={FaEyeSlash}
+                    >
                       Private
                     </Badge>
                   </div>
