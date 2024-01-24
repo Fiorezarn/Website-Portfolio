@@ -70,7 +70,7 @@ const Contact = () => {
         transition:Bounce
       />
       <ToastContainer />
-      <div className="h-screen w-full pt-20 px-6 lg:px-28 mb-72 lg:mb-0">
+      <div className="lg:h-screen w-full pt-20 px-6 lg:px-28 mb-72 lg:mb-0">
         <div className="lg:grid lg:grid-cols-2 lg:gap-10">
           <div>
             <h1 className="font-bold">

@@ -11,7 +11,7 @@ import "./Content.scss";
 const Content = () => {
   return (
     <>
-      <div className="w-full h-screen">
+      <div className="w-full lg:h-screen">
         <div className="lg:px-28 grid lg:grid-cols-2 lg:py-40">
           <div className="px-6 lg:px-4 text-xl order-last lg:order-first lg:text-3xl text-purple-600 lg:font-bold mt-10 lg:mt-40">
             <TypeAnimation
