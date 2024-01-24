@@ -28,7 +28,9 @@ const Navbar = () => {
             key={item.id}
             className="p-4 hover:bg-purple-400 rounded-xl m-2 cursor-pointer duration-300 hover:text-black"
           >
-            <a href={`#${item.text}`}>{item.text}</a>
+            <a className="text-white hover:text-black" href={`#${item.text}`}>
+              {item.text}
+            </a>
           </li>
         ))}
       </ul>
