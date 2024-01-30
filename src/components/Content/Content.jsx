@@ -46,30 +46,30 @@ const Content = () => {
                   </a>
                 </Button>
               </Tooltip>
-              <div className="block text-gray-400 text-sm font-normal mt-16">
-                Last Updated 24 Januari 2024
+              <div className="flex space-x-6 mt-8">
+                <a
+                  className="text-white hover:text-purple-400 text-3xl"
+                  href="https://github.com/fiorezarn"
+                >
+                  <FaGithub />
+                </a>
+                <a
+                  className="text-white hover:text-purple-400 text-3xl"
+                  href="https://www.linkedin.com/in/fiorezarn"
+                >
+                  <FaLinkedin />
+                </a>
+                <a
+                  className="text-white hover:text-purple-400 text-3xl"
+                  href="https://www.instagram.com/fiorezaa/"
+                >
+                  <FaInstagram />
+                </a>
+              </div>
+              <div className="block text-gray-400 text-sm font-normal mt-10">
+                Last Updated 30 Januari 2024
               </div>
             </div>
-          </div>
-          <div className="flex flex-col space-y-8 right-3.5 bottom-[50%] lg:right-3.5 md:top-32 absolute">
-            <a
-              className="text-white hover:text-purple-400 text-3xl"
-              href="https://github.com/fiorezarn"
-            >
-              <FaGithub />
-            </a>
-            <a
-              className="text-white hover:text-purple-400 text-3xl"
-              href="https://www.linkedin.com/in/fiorezarn"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              className="text-white hover:text-purple-400 text-3xl"
-              href="https://www.instagram.com/fiorezaa/"
-            >
-              <FaInstagram />
-            </a>
           </div>
 
           <div className="justify-center mx-auto mt-44 lg:mt-20 px-14">

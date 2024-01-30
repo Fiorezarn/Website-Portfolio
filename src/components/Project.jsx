@@ -8,6 +8,7 @@ import Moneta from "../assets/moneta.png";
 import Nextflix from "../assets/nextflix.png";
 import Batary from "../assets/Batary.png";
 import Incentive from "../assets/incentive.png";
+import Portofolio from "../assets/portofolio.png";
 import { MdOutlineAirplay } from "react-icons/md";
 import { Icon } from "@iconify/react";
 import { FaEye } from "react-icons/fa";
@@ -43,7 +44,7 @@ export default function CarouselIndicatorsOutside() {
 
   return (
     <>
-      <div className="lg:h-screen pt-20 lg:px-28" id="Project">
+      <div className="lg:h-screen pt-20 lg:px-20" id="Project">
         <h1 className="font-bold text-4xl text-center">Project</h1>
         <div className="glide-05 relative py-10">
           <div className="overflow-hidden" data-glide-el="track">
@@ -227,6 +228,47 @@ export default function CarouselIndicatorsOutside() {
                     <a
                       className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center pointer-events-none"
                       href=""
+                    >
+                      <span>Source Code</span>
+                      <Icon icon="ant-design:code-filled" />
+                    </a>
+                  </div>
+                </Card>
+              </li>
+              <li>
+                <Card
+                  className="max-w-sm"
+                  imgAlt="Meaningful alt text for an image that is not purely decorative"
+                  imgSrc={Portofolio}
+                >
+                  <div className="flex justify-between">
+                    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      Website Portofolio
+                    </h5>
+                    <Badge
+                      className="text-end justify-end"
+                      color="gray"
+                      icon={FaEye}
+                    >
+                      Private
+                    </Badge>
+                  </div>
+                  <p className="font-normal text-gray-700 dark:text-gray-400">
+                    A portfolio website, built with React and Vite, showcasing
+                    my projects and expertise effectively and deployed using
+                    vercel
+                  </p>
+                  <div className="btn-group flex gap-2">
+                    <a
+                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center pointer-events-none"
+                      href="https://fiorezarn.vercel.app/"
+                    >
+                      <span>Demo</span>
+                      <MdOutlineAirplay />
+                    </a>
+                    <a
+                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center pointer-events-none"
+                      href="https://github.com/Fiorezarn/Website-Portfolio"
                     >
                       <span>Source Code</span>
                       <Icon icon="ant-design:code-filled" />

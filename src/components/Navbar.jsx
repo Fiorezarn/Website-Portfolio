@@ -17,7 +17,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="fixed w-screen bg-black z-20 flex justify-between items-center h-24 mx-auto px-12 text-white">
+    <div className="fixed w-full bg-black z-20 flex justify-between items-center h-24 mx-auto px-12 text-white">
       {/* Logo */}
       <h1 className="w-full text-3xl font-bold text-purple-400">FRN.</h1>
 

@@ -7,7 +7,7 @@ const FooterComponent = () => {
         <div className="logo">
           <h1 className="text-purple-400 text-3xl font-bold mb-8">FRN.</h1>
         </div>
-        <div className="flex gap-6 lg:gap-10 text-black text-end justify-end">
+        <div className="flex gap-6 lg:gap-10 text-black">
           <a href="#Home">Home</a>
           <a href="#About">About</a>
           <a href="#Skill">Skill</a>
