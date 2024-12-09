@@ -1,37 +1,94 @@
 import React, { useEffect } from "react";
-import { Badge } from "flowbite-react";
 import Glide from "@glidejs/glide";
-import { Card } from "flowbite-react";
-import { FaEyeSlash } from "react-icons/fa";
+import ProjectCard from "./Card";
 import MilenialStuff from "../assets/milenalstuff.jpg";
 import Moneta from "../assets/moneta.png";
 import Nextflix from "../assets/nextflix.png";
 import Batary from "../assets/Batary.png";
 import Incentive from "../assets/incentive.png";
 import Portofolio from "../assets/portofolio.png";
-import { MdOutlineAirplay } from "react-icons/md";
-import { Icon } from "@iconify/react";
-import { FaEye } from "react-icons/fa";
+import Lecafe from "../assets/website lecafe.png";
 
-export default function CarouselIndicatorsOutside() {
+const projects = [
+  {
+    title: "Milenial Stuff Website",
+    description:
+      "An online store selling items, created using Laravel framework version 8. Features include product listings, shopping cart, and user authentication.",
+    image: MilenialStuff,
+    isPublic: true,
+    demoLink: "http://milenialstuff.my.id/",
+    sourceLink: "https://github.com/Fiorezarn/MilenialStuff.id",
+  },
+  {
+    title: "Moneta Website",
+    description:
+      "A financial records website built with ReactJS and Golang, ensuring a streamlined and responsive user interface. Includes features for expense tracking and financial reporting.",
+    image: Moneta,
+    isPublic: true,
+    demoLink: "https://moneta.mikroskil.com/",
+    sourceLink: "https://github.com/c23-m4001",
+  },
+  {
+    title: "Nextflix Website",
+    description:
+      "A website displaying a list of movies from a public API, created using webpack. Features include movie search, filtering, and detailed movie information pages.",
+    image: Nextflix,
+    isPublic: true,
+    demoLink: "https://nextflixweb.netlify.app/",
+    sourceLink: "https://github.com/Fiorezarn/Nextflix-webpack",
+  },
+  {
+    title: "Batary Apps",
+    description:
+      "A website displaying a list of restaurants from a public API, created using webpack. Includes features such as restaurant search, filtering by cuisine, and user reviews.",
+    image: Batary,
+    isPublic: true,
+    demoLink: "https://bataryapps.netlify.app/",
+    sourceLink: "https://github.com/Fiorezarn/Batary-Apps",
+  },
+  {
+    title: "Incentive Website",
+    description:
+      "A website for managing and calculating employee incentives, created using Laravel. Features include performance tracking, incentive calculation, and reporting tools.",
+    image: Incentive,
+    isPublic: false,
+    demoLink: "",
+    sourceLink: "",
+  },
+  {
+    title: "Website Portfolio",
+    description:
+      "A portfolio website built with React and Vite, showcasing projects and expertise. Includes sections for about me, skills, projects, and contact information.",
+    image: Portofolio,
+    isPublic: true,
+    demoLink: "https://fiorezarn.vercel.app/",
+    sourceLink: "https://github.com/Fiorezarn/Website-Portfolio",
+  },
+  {
+    title: "Le Cafe",
+    description:
+      "A cafe website showcasing menu items, location, and online ordering capabilities. Built with modern web technologies for a smooth user experience.",
+    image: Lecafe,
+    isPublic: true,
+    demoLink: "https://lecafe-fe.vercel.app/",
+    sourceLink: "https://github.com/Fiorezarn/lecafe-fe",
+  },
+];
+
+export default function ProjectCarousel() {
   useEffect(() => {
     const slider = new Glide(".glide-05", {
       type: "carousel",
       focusAt: "center",
       perView: 3,
-      autoplay: 3000,
+      autoplay: 5000,
       animationDuration: 700,
-      gap: 24,
-      classNames: {
-        nav: {
-          active: "[&>*]:bg-wuiSlate-700",
-        },
-      },
+      gap: 32,
       breakpoints: {
-        1024: {
+        1280: {
           perView: 2,
         },
-        640: {
+        768: {
           perView: 1,
         },
       },
@@ -43,276 +100,38 @@ export default function CarouselIndicatorsOutside() {
   }, []);
 
   return (
-    <>
-      <div className="lg:h-screen pt-20 lg:px-20" id="Project">
-        <h1 className="font-bold text-4xl text-center">Project</h1>
-        <div className="glide-05 relative py-10">
+    <section className="py-16 px-4 sm:px-6 lg:px-8" id="Project">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          My Projects
+        </h2>
+        <div className="glide-05 relative">
           <div className="overflow-hidden" data-glide-el="track">
             <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
-              <li>
-                <Card
-                  className="max-w-sm"
-                  imgAlt="Meaningful alt text for an image that is not purely decorative"
-                  imgSrc={MilenialStuff}
-                >
-                  <div className="flex justify-between">
-                    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                      Milenial Stuff Website
-                    </h5>
-                    <Badge color="gray" icon={FaEye}>
-                      Public
-                    </Badge>
-                  </div>
-                  <p className="font-normal text-gray-700 dark:text-gray-400">
-                    Millennial Stuff is an online store that sells items This
-                    website was created using the Laravel framework version 8
-                  </p>
-                  <div className="btn-group flex gap-2">
-                    <a
-                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center"
-                      href="http://milenialstuff.my.id/"
-                    >
-                      <span>Demo</span>
-                      <MdOutlineAirplay />
-                    </a>
-                    <a
-                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center"
-                      href="https://github.com/Fiorezarn/MilenialStuff.id"
-                    >
-                      <span>Source Code</span>
-                      <Icon icon="ant-design:code-filled" />
-                    </a>
-                  </div>
-                </Card>
-              </li>
-              <li>
-                <Card
-                  className="max-w-sm"
-                  imgAlt="Meaningful alt text for an image that is not purely decorative"
-                  imgSrc={Moneta}
-                >
-                  <div className="flex justify-between">
-                    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                      Moneta Website
-                    </h5>
-                    <Badge color="gray" icon={FaEye}>
-                      Public
-                    </Badge>
-                  </div>
-                  <p className="font-normal text-gray-700 dark:text-gray-400">
-                    Moneta website harmonizes financial records through ReactJS
-                    and Golang, ensuring a streamlined and responsive user
-                    interface.
-                  </p>
-                  <div className="btn-group flex gap-2">
-                    <a
-                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center"
-                      href="https://moneta.mikroskil.com/"
-                    >
-                      <span>Demo</span>
-                      <MdOutlineAirplay />
-                    </a>
-                    <a
-                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center"
-                      href="https://github.com/c23-m4001"
-                    >
-                      <span>Source Code</span>
-                      <Icon icon="ant-design:code-filled" />
-                    </a>
-                  </div>
-                </Card>
-              </li>
-              <li>
-                <Card
-                  className="max-w-sm"
-                  imgAlt="Meaningful alt text for an image that is not purely decorative"
-                  imgSrc={Nextflix}
-                >
-                  <div className="flex justify-between">
-                    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                      Nextflix Website
-                    </h5>
-                    <Badge color="gray" icon={FaEye}>
-                      Public
-                    </Badge>
-                  </div>
-                  <p className="font-normal text-gray-700 dark:text-gray-400">
-                    Nextflix is a website that displays a list of movies taken
-                    from public api and created using webpack.
-                  </p>
-                  <div className="btn-group flex gap-2">
-                    <a
-                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center"
-                      href="https://nextflixweb.netlify.app/"
-                    >
-                      <span>Demo</span>
-                      <MdOutlineAirplay />
-                    </a>
-                    <a
-                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center"
-                      href="https://github.com/Fiorezarn/Nextflix-webpack"
-                    >
-                      <span>Source Code</span>
-                      <Icon icon="ant-design:code-filled" />
-                    </a>
-                  </div>
-                </Card>
-              </li>
-              <li>
-                <Card
-                  className="max-w-sm"
-                  imgAlt="Meaningful alt text for an image that is not purely decorative"
-                  imgSrc={Batary}
-                >
-                  <div className="flex justify-between">
-                    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                      Batary Apps
-                    </h5>
-                    <Badge color="gray" icon={FaEye}>
-                      Public
-                    </Badge>
-                  </div>
-                  <p className="font-normal text-gray-700 dark:text-gray-400">
-                    Batary Apps is a website that displays a list of Restaurant
-                    taken from public api and created using webpack.
-                  </p>
-                  <div className="btn-group flex gap-2">
-                    <a
-                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center"
-                      href="https://bataryapps.netlify.app/"
-                    >
-                      <span>Demo</span>
-                      <MdOutlineAirplay />
-                    </a>
-                    <a
-                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center"
-                      href="https://github.com/Fiorezarn/Batary-Apps"
-                    >
-                      <span>Source Code</span>
-                      <Icon icon="ant-design:code-filled" />
-                    </a>
-                  </div>
-                </Card>
-              </li>
-              <li>
-                <Card
-                  className="max-w-sm"
-                  imgAlt="Meaningful alt text for an image that is not purely decorative"
-                  imgSrc={Incentive}
-                >
-                  <div className="flex justify-between">
-                    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                      Incentive Website
-                    </h5>
-                    <Badge
-                      className="text-end justify-end"
-                      color="gray"
-                      icon={FaEyeSlash}
-                    >
-                      Private
-                    </Badge>
-                  </div>
-                  <p className="font-normal text-gray-700 dark:text-gray-400">
-                    Incentive website is here to provide support in managing and
-                    calculating employee incentives this website was created
-                    using Laravel
-                  </p>
-                  <div className="btn-group flex gap-2">
-                    <a
-                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center pointer-events-none"
-                      href=""
-                    >
-                      <span>Demo</span>
-                      <MdOutlineAirplay />
-                    </a>
-                    <a
-                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center pointer-events-none"
-                      href=""
-                    >
-                      <span>Source Code</span>
-                      <Icon icon="ant-design:code-filled" />
-                    </a>
-                  </div>
-                </Card>
-              </li>
-              <li>
-                <Card
-                  className="max-w-sm"
-                  imgAlt="Meaningful alt text for an image that is not purely decorative"
-                  imgSrc={Portofolio}
-                >
-                  <div className="flex justify-between">
-                    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                      Website Portofolio
-                    </h5>
-                    <Badge
-                      className="text-end justify-end"
-                      color="gray"
-                      icon={FaEye}
-                    >
-                      Private
-                    </Badge>
-                  </div>
-                  <p className="font-normal text-gray-700 dark:text-gray-400">
-                    A portfolio website, built with React and Vite, showcasing
-                    my projects and expertise effectively and deployed using
-                    vercel
-                  </p>
-                  <div className="btn-group flex gap-2">
-                    <a
-                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center pointer-events-none"
-                      href="https://fiorezarn.vercel.app/"
-                    >
-                      <span>Demo</span>
-                      <MdOutlineAirplay />
-                    </a>
-                    <a
-                      className="hover:bg-black rounded-lg flex gap-2 px-6 py-2 text-white hover:text-white bg-gray-800 items-center pointer-events-none"
-                      href="https://github.com/Fiorezarn/Website-Portfolio"
-                    >
-                      <span>Source Code</span>
-                      <Icon icon="ant-design:code-filled" />
-                    </a>
-                  </div>
-                </Card>
-              </li>
+              {projects.map((project, index) => (
+                <li key={index} className="w-full max-w-xl mx-auto px-2">
+                  <ProjectCard {...project} />
+                </li>
+              ))}
             </ul>
           </div>
           <div
-            className="flex w-full items-center justify-center gap-2 mt-4"
+            className="flex w-full items-center justify-center gap-2 mt-8"
             data-glide-el="controls[nav]"
           >
-            <button
-              className="group p-4"
-              data-glide-dir="=0"
-              aria-label="goto slide 1"
-            >
-              <span className="block h-2 w-2 rounded-full bg-white ring-1 ring-slate-700 transition-colors duration-300 focus:outline-none"></span>
-            </button>
-            <button
-              className="group p-4"
-              data-glide-dir="=1"
-              aria-label="goto slide 2"
-            >
-              <span className="block h-2 w-2 rounded-full bg-white ring-1 ring-slate-700 transition-colors duration-300 focus:outline-none"></span>
-            </button>
-            <button
-              className="group p-4"
-              data-glide-dir="=2"
-              aria-label="goto slide 3"
-            >
-              <span className="block h-2 w-2 rounded-full bg-white ring-1 ring-slate-700 transition-colors duration-300 focus:outline-none"></span>
-            </button>
-            <button
-              className="group p-4"
-              data-glide-dir="=3"
-              aria-label="goto slide 4"
-            >
-              <span className="block h-2 w-2 rounded-full bg-white ring-1 ring-slate-700 transition-colors duration-300 focus:outline-none"></span>
-            </button>
+            {projects.map((_, index) => (
+              <button
+                key={index}
+                className="group p-2"
+                data-glide-dir={`=${index}`}
+                aria-label={`goto slide ${index + 1}`}
+              >
+                <span className="block h-3 w-3 rounded-full bg-gray-300 transition-colors duration-300 group-hover:bg-gray-600 focus:outline-none"></span>
+              </button>
+            ))}
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }

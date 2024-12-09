@@ -77,7 +77,7 @@ const Contact = () => {
       />
       <ToastContainer />
       <div
-        className="lg:h-screen w-full pt-20 px-6 lg:px-28 mb-10 xl:mb-0 xl:pt-0 lg:mb-0"
+        className="lg:h-screen w-full py-20 px-6 lg:px-28 mb-10"
         id="Contact"
       >
         <div className="lg:grid lg:grid-cols-2 lg:gap-10">
