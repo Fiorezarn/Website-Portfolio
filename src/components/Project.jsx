@@ -14,6 +14,11 @@ import Incentive from '../assets/incentive.png';
 import Portofolio from '../assets/portofolio.png';
 import Lecafe from '../assets/website lecafe.png';
 import Backoffice from '../assets/backoffice.png';
+import Secretlink from '../assets/secretlink.png';
+import Payment from '../assets/payment.jpeg';
+import Trackorder from '../assets/trackorder.jpeg';
+import Cashback from '../assets/trackorder.jpeg';
+import Warehouse from '../assets/warehouse.png';
 
 // ProjectCard Component
 function ProjectCard({
@@ -100,7 +105,7 @@ const projects = [
   title: 'SecretLink - Customer Order Request',
   description:
    'Secure system for handling customer meal plan modifications and special requests. Features secure link generation, request validation, and integration with kitchen management systems.',
-  image: Backoffice,
+  image: Secretlink,
   isPublic: false,
   demoLink: '',
   sourceLink: '',
@@ -109,7 +114,7 @@ const projects = [
   title: 'Payment Instructions System',
   description:
    'Payment processing system handling transactions up to IDR 1 billion daily. Includes payment verification, transaction history, reconciliation reports, and integration with multiple payment gateways.',
-  image: Backoffice,
+  image: Payment,
   isPublic: false,
   demoLink: '',
   sourceLink: '',
@@ -118,7 +123,7 @@ const projects = [
   title: 'Order Tracking System',
   description:
    'Real-time order tracking system for customers and internal staff. Features order status updates, delivery tracking, notification system, and customer communication tools.',
-  image: Backoffice,
+  image: Trackorder,
   isPublic: false,
   demoLink: '',
   sourceLink: '',
@@ -127,7 +132,7 @@ const projects = [
   title: 'Cashback Management System',
   description:
    'Loyalty and cashback program management system. Includes points calculation, redemption processing, customer tier management, and promotional campaign tools.',
-  image: Backoffice,
+  image: Cashback,
   isPublic: false,
   demoLink: '',
   sourceLink: '',
@@ -136,7 +141,7 @@ const projects = [
   title: 'Warehouse Management System',
   description:
    'Complete inventory management system for Yellow Fit operations. Features include stock tracking, supplier management, expiration date monitoring, and automated reordering systems.',
-  image: Backoffice,
+  image: Warehouse,
   isPublic: false,
   demoLink: '',
   sourceLink: '',
